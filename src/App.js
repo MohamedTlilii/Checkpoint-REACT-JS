@@ -1,30 +1,25 @@
 import "./App.css";
-import { Card, Icon, Image } from "semantic-ui-react";
+import "bootstrap/dist/css/bootstrap.min.css";
+// bootstrap css link
+
+import AppHeader from "./components/header";
+// import from components  header.js fill
+import AppCard from "./components/card";
+// import from components  card.js fill
+
 function App() {
   return (
     <div className="App">
-      <Card>
-        <Image
-          src="https://static.vecteezy.com/system/resources/previews/008/442/086/non_2x/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg"
-          wrapped
-          ui={false}
-        />
-        <Card.Content>
-          <Card.Header>Matthew</Card.Header>
-          <Card.Meta>
-            <span className="date">Joined in 2015</span>
-          </Card.Meta>
-          <Card.Description>
-            Matthew is a musician living in Nashville.
-          </Card.Description>
-        </Card.Content>
-        <Card.Content extra>
-          <a>
-            <Icon name="user" />
-            22 Friends
-          </a>
-        </Card.Content>
-      </Card>
+      <header id="header">
+        <AppHeader />
+        {/* put the function name to show in locallhost navbar */}
+      </header>
+      <main>
+        <AppCard />
+        <AppCard />
+        <AppCard />
+        {/* put the function name to show in locallhost card +3 */}
+      </main>
     </div>
   );
 }
