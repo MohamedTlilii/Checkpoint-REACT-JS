@@ -14,11 +14,14 @@ function App() {
         <AppHeader />
         {/* put the function name to show in locallhost navbar */}
       </header>
+
       <main>
-        <AppCard />
-        <AppCard />
-        <AppCard />
-        {/* put the function name to show in locallhost card +3 */}
+        <div className="cards-Containir">
+          <AppCard />
+          <AppCard />
+          <AppCard />
+          {/* put the function name to show in locallhost card +3 */}
+        </div>
       </main>
     </div>
   );
